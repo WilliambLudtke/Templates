@@ -1,0 +1,1607 @@
+{
+    "zabbix_export": {
+        "version": "7.0",
+        "template_groups": [
+            {
+                "uuid": "84245dd8839f4726848c5285f3db3771",
+                "name": "Modelos de Template"
+            },
+            {
+                "uuid": "7df96b18c230490a9a0a9e2307226338",
+                "name": "Templates"
+            },
+            {
+                "uuid": "0e9334c118ae46648d5af9e83aa56397",
+                "name": "Templates gerais"
+            },
+            {
+                "uuid": "3b0691e5e5494a58b13a5108568eb571",
+                "name": "Templates por Services"
+            }
+        ],
+        "templates": [
+            {
+                "uuid": "06e5fbca9bb046a2b819479250f32f5a",
+                "template": "Template DNS - Bind",
+                "name": "Template DNS - Bind",
+                "groups": [
+                    {
+                        "name": "Modelos de Template"
+                    },
+                    {
+                        "name": "Templates"
+                    },
+                    {
+                        "name": "Templates gerais"
+                    },
+                    {
+                        "name": "Templates por Services"
+                    }
+                ],
+                "items": [
+                    {
+                        "uuid": "c9f6964021a1498092b3c13488033c0d",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Incoming Queries\",\"A\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "7a651f8625274276b0ed52832f98845f",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Incoming Queries\",\"A6\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "9b3832a2b9754350867f5eafd6de0456",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Incoming Queries\",\"AAAA\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "cadf9e102eb0432c860b9a5bdee903df",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Incoming Queries\",\"ANY\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "4c86a7911b99450fbc2750daf116e648",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Incoming Queries\",\"AXFR\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "48bef9e2105f490d910fc2b2cff67780",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Incoming Queries\",\"CNAME\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "a078932bf28d4f68a274bc70607c4222",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Incoming Queries\",\"DS\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "298b91d378dd41e186436ea14c6b4769",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Incoming Queries\",\"MX\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "e33517de34894954baedc1ba59190f97",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Incoming Queries\",\"NS\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "27bce0a572394cff995c84492779ad25",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Incoming Queries\",\"Others\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "1fc7d860b97047bb8cf1c5c743916a2a",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Incoming Queries\",\"SOA\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "c8e70cd53a0a4436abaf3cc307340136",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Incoming Queries\",\"SRV\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "cd73a808cca14c5eaa43bd3e75371327",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Incoming Queries\",\"TXT\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "6db5116163e8402da785458d6edcb46a",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Incoming Requests\",\"NOTIFY\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "bbfa3e3455d840bc9a689d80cd4e1ae2",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Incoming Requests\",\"QUERY\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "1e95c412f2a84658873a450574cc4587",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Name Server Statistics\",\"auth queries rejected\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "b465ac9d0ad8423d89c4bbe0575d0822",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Name Server Statistics\",\"IPv4 requests received\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "e600be01cfda4b29840785c065fe26f6",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Name Server Statistics\",\"other query failures\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "d76e1ba5a32347178beafe41f835cb30",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Name Server Statistics\",\"queries resulted in authoritative answer\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "2cb44b9dc11d4eceb69b8230243ebfcc",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Name Server Statistics\",\"queries resulted in NXDOMAIN\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "fc460c8722c8480288840153b15c6cf9",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Name Server Statistics\",\"queries resulted in nxrrset\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "43dbe0f9ddab4f84be3bc9cd5cb2dbb9",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Name Server Statistics\",\"queries resulted in successful answer\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "5d80a164ad684602a4a295c80d98d509",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Name Server Statistics\",\"recursive queries rejected\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "3d5c3d3017a040dcaada4cd877e39634",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Name Server Statistics\",\"requests with EDNS(0) received\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "4a5a6645ed024f7888575547b7e7c5a6",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Name Server Statistics\",\"responses sent\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "c2c98bd5112c4e079cc4bd523a85fb0e",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Name Server Statistics\",\"responses with EDNS(0) sent\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "6488e048692e43ee9275d2551a2767c7",
+                        "name": "Named : $1 - $2",
+                        "type": "TRAP",
+                        "key": "bind.stats[\"Name Server Statistics\",\"TCP requests received\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "preprocessing": [
+                            {
+                                "type": "CHANGE_PER_SECOND",
+                                "parameters": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "f19553cbb03a4d8f867f24a0900c03ae",
+                        "name": "Named : $1",
+                        "type": "TRAP",
+                        "key": "bind.status[\"CPUs found\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "04425b2404b14f9ca01ddc1b437d5dee",
+                        "name": "Named : $1",
+                        "type": "TRAP",
+                        "key": "bind.status[\"debug level\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "a38790cfcde241d8b3b8de701cb72fe9",
+                        "name": "Named : $1",
+                        "type": "TRAP",
+                        "key": "bind.status[\"number of zones\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "02d27ed4200a4c3dbea1bb3786b1845d",
+                        "name": "Named : $1",
+                        "type": "TRAP",
+                        "key": "bind.status[\"query logging\"]",
+                        "delay": "0",
+                        "history": "365d",
+                        "value_type": "CHAR",
+                        "trends": "0",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "f2d976c5655e4ab4824802b60b5039cd",
+                                "expression": "find(/Template DNS - Bind/bind.status[\"query logging\"],,\"like\",\"OFF\")<>1",
+                                "name": "Query Logging is not OFF",
+                                "priority": "HIGH",
+                                "manual_close": "YES",
+                                "tags": [
+                                    {
+                                        "tag": "Equipe",
+                                        "value": "Unirede"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "a70bec67252841baa8d5617d1ceddb3c",
+                        "name": "Named : $1",
+                        "type": "TRAP",
+                        "key": "bind.status[\"recursive clients\"]",
+                        "delay": "0",
+                        "history": "365d",
+                        "trends": "90d",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "811c7cd8182e46e197c8bc8c532fe45b",
+                        "name": "Named : $1",
+                        "type": "TRAP",
+                        "key": "bind.status[\"server\"]",
+                        "delay": "0",
+                        "history": "365d",
+                        "value_type": "CHAR",
+                        "trends": "0",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "e49be92a55f94d9e86393c09312021a2",
+                        "name": "Named : $1",
+                        "type": "TRAP",
+                        "key": "bind.status[\"soa queries in progress\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "fcd7db4a129d4266abddd5f096290544",
+                        "name": "Named : $1",
+                        "type": "TRAP",
+                        "key": "bind.status[\"tcp clients\"]",
+                        "delay": "0",
+                        "history": "365d",
+                        "trends": "90d",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "27c32650cb2745f386a2712f3203b7de",
+                        "name": "Named : $1",
+                        "type": "TRAP",
+                        "key": "bind.status[\"version\"]",
+                        "delay": "0",
+                        "history": "365d",
+                        "value_type": "CHAR",
+                        "trends": "0",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "e23ef9525cce4a55981b996c7c2ca0a3",
+                        "name": "Named : $1",
+                        "type": "TRAP",
+                        "key": "bind.status[\"worker threads\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "fec27e03ebee4c95a374df56ccc2793c",
+                        "name": "Named : $1",
+                        "type": "TRAP",
+                        "key": "bind.status[\"xfers deferred\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "cb7460f56d4643e891265ef1327728bd",
+                        "name": "Named : $1",
+                        "type": "TRAP",
+                        "key": "bind.status[\"xfers running\"]",
+                        "delay": "0",
+                        "history": "1w",
+                        "trends": "90d",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "7b8df014af5944beba3922c0b61b5f8b",
+                        "name": "Monitor : Named",
+                        "key": "monitor[bind.stats,{$NAMED_STATS_FILE},\"{$RM_STATS}\"]",
+                        "delay": "5m",
+                        "history": "1w",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "cef82e044f964a198b94bb06996cf6d8",
+                        "name": "Status {$N_NAMED} na porta $2",
+                        "key": "net.tcp.port[,{$PORTA_NAMED}]",
+                        "delay": "5m",
+                        "history": "1w",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "a4f30e8c41ae42339d3b4ac4b767c8cd",
+                                "expression": "last(/Template DNS - Bind/net.tcp.port[,{$PORTA_NAMED}],#2)=0",
+                                "name": "{$N_NAMED} n\u00e3o est\u00e1 respondendo em {HOSTNAME} na porta: {$PORTA_NAMED}",
+                                "priority": "AVERAGE",
+                                "manual_close": "YES",
+                                "dependencies": [
+                                    {
+                                        "name": "{$N_NAMED} n\u00e3o est\u00e1 executando em {HOSTNAME}",
+                                        "expression": "last(/Template DNS - Bind/proc.num[{$NAMED}])=0"
+                                    }
+                                ]
+                            },
+                            {
+                                "uuid": "8cdd9929c88144c7b06f71b45cc5abee",
+                                "expression": "last(/Template DNS - Bind/net.tcp.port[,{$PORTA_NAMED}],#3)=0",
+                                "name": "{$N_NAMED} n\u00e3o est\u00e1 respondendo em {HOSTNAME} na porta: {$PORTA_NAMED}",
+                                "priority": "HIGH",
+                                "manual_close": "YES",
+                                "dependencies": [
+                                    {
+                                        "name": "{$N_NAMED} n\u00e3o est\u00e1 executando em {HOSTNAME}",
+                                        "expression": "last(/Template DNS - Bind/proc.num[{$NAMED}])=0"
+                                    }
+                                ],
+                                "tags": [
+                                    {
+                                        "tag": "Equipe",
+                                        "value": "Unirede"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "08b5c0b961d749f394317f6a11e7929e",
+                        "name": "Uso de CPU do processo {$N_NAMED}",
+                        "key": "proc.cpu.used[{$NAMED}]",
+                        "delay": "5m",
+                        "history": "90d",
+                        "value_type": "FLOAT",
+                        "units": "%",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "ae78d691b64346e382c8594b002d0e1a",
+                        "name": "N\u00famero de Processos do {$N_NAMED}",
+                        "key": "proc.num[{$NAMED}]",
+                        "delay": "5m",
+                        "history": "90d",
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "DNS"
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "575df982155c4a32a8d041bb89e97c7d",
+                                "expression": "last(/Template DNS - Bind/proc.num[{$NAMED}])=0",
+                                "name": "{$N_NAMED} n\u00e3o est\u00e1 executando em {HOSTNAME}",
+                                "priority": "HIGH",
+                                "manual_close": "YES",
+                                "tags": [
+                                    {
+                                        "tag": "Equipe",
+                                        "value": "Unirede"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$NAMED}",
+                        "value": "named"
+                    },
+                    {
+                        "macro": "{$NAMED_STATS_FILE}",
+                        "value": "/etc/named/named.stats"
+                    },
+                    {
+                        "macro": "{$N_NAMED}",
+                        "value": "Named"
+                    },
+                    {
+                        "macro": "{$PORTA_NAMED}",
+                        "value": "53"
+                    },
+                    {
+                        "macro": "{$RM_STATS}",
+                        "value": "/bin/rm -f"
+                    }
+                ]
+            }
+        ],
+        "graphs": [
+            {
+                "uuid": "9051101ee61e45338b405da1ae3f22b4",
+                "name": "CPU Named",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "proc.cpu.used[{$NAMED}]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "3633725fb71e4127b9eef71e4a1aa275",
+                "name": "Monitor : Named",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "monitor[bind.stats,{$NAMED_STATS_FILE},\"{$RM_STATS}\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "b4b54a06280f4384a8f5064a2b9ecdff",
+                "name": "Named : CPUs found",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.status[\"CPUs found\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "0024e4fbabd149e0b653bd5eb79dce78",
+                "name": "Named : debug level",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.status[\"debug level\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "a271a8f2088a40889d9d52390de56513",
+                "name": "Named : Incoming Queries - A",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Incoming Queries\",\"A\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "02c8ffc32e5d48aea6e4fa8c21aed49b",
+                "name": "Named : Incoming Queries - A6",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Incoming Queries\",\"A6\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "5358bd859edd4b5981e91f37c45c17a5",
+                "name": "Named : Incoming Queries - AAAA",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Incoming Queries\",\"AAAA\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "7534aa1959ad41158dbc170471a088a3",
+                "name": "Named : Incoming Queries - ANY",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Incoming Queries\",\"ANY\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "81988bb3f8574cdc9c95d27e915358e4",
+                "name": "Named : Incoming Queries - AXFR",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Incoming Queries\",\"AXFR\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "4784b6e856ec44469294c1b898dfddc4",
+                "name": "Named : Incoming Queries - CNAME",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Incoming Queries\",\"CNAME\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "f244f740635a487ea9f50fef788cb5ae",
+                "name": "Named : Incoming Queries - DS",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Incoming Queries\",\"DS\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "3c919bc9294d4e458de829ee9c843eda",
+                "name": "Named : Incoming Queries - MX",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Incoming Queries\",\"MX\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "1ceee6a3b61d4adcb6756f97bc79540c",
+                "name": "Named : Incoming Queries - NS",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Incoming Queries\",\"NS\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "3cd762028c274dcd9ff12fc0ef0bd48a",
+                "name": "Named : Incoming Queries - Others",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Incoming Queries\",\"Others\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "40e6ae01da2f4dce9faea1bde56f4c41",
+                "name": "Named : Incoming Queries - SOA",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Incoming Queries\",\"SOA\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "e56b4f11970c4b4f9d8ede67c53e9574",
+                "name": "Named : Incoming Queries - SRV",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Incoming Queries\",\"SRV\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "1ea6a389c7474de0ad8dac224c6132ed",
+                "name": "Named : Incoming Queries - TXT",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Incoming Queries\",\"TXT\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "f9a1ecc6b39e4422a0d7580b7f97f3c9",
+                "name": "Named : Incoming Requests - NOTIFY",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Incoming Requests\",\"NOTIFY\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "c209849e1a3c4f7d87f2064b0c3e6e3a",
+                "name": "Named : Incoming Requests - QUERY",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Incoming Requests\",\"QUERY\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "304b22e338574116904c8e0239b2990d",
+                "name": "Named : Name Server Statistics - auth queries rejected",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Name Server Statistics\",\"auth queries rejected\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "70ce0d06cec643328be71df7c77723a7",
+                "name": "Named : Name Server Statistics - IPv4 requests received",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Name Server Statistics\",\"IPv4 requests received\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "802f1bc025a2417aa142c7476aa2560c",
+                "name": "Named : Name Server Statistics - other query failures",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Name Server Statistics\",\"other query failures\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "f36047fe71ca4219ac163704cec80eaa",
+                "name": "Named : Name Server Statistics - queries resulted in authoritative answer",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Name Server Statistics\",\"queries resulted in authoritative answer\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "728331dbbc994f12aba33db1e63f5d78",
+                "name": "Named : Name Server Statistics - queries resulted in NXDOMAIN",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Name Server Statistics\",\"queries resulted in NXDOMAIN\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "b227a16385d3484193d28892f787ff96",
+                "name": "Named : Name Server Statistics - queries resulted in nxrrset",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Name Server Statistics\",\"queries resulted in nxrrset\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "fc3912ccc6be4330960042d24529ea5d",
+                "name": "Named : Name Server Statistics - queries resulted in successful answer",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Name Server Statistics\",\"queries resulted in successful answer\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "1c64d4fc71ca4710b576910251efd505",
+                "name": "Named : Name Server Statistics - recursive queries rejected",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Name Server Statistics\",\"recursive queries rejected\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "fc0007af8d8b4ff29fbf90eb15c5a6fb",
+                "name": "Named : Name Server Statistics - requests with EDNS(0) received",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Name Server Statistics\",\"requests with EDNS(0) received\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "18217e8b3f3d4461bbd830db9d78c9cc",
+                "name": "Named : Name Server Statistics - responses sent",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Name Server Statistics\",\"responses sent\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "3a8b129384524682889c2d70cd4ba8ac",
+                "name": "Named : Name Server Statistics - responses with EDNS(0) sent",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Name Server Statistics\",\"responses with EDNS(0) sent\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "996cb6ecf64c4bb59b34e52560ecfc35",
+                "name": "Named : Name Server Statistics - TCP requests received",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.stats[\"Name Server Statistics\",\"TCP requests received\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "065f6432a79d4ca49d006edca2739ffc",
+                "name": "Named : number of zones",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.status[\"number of zones\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "b0fdb72c44b24960ab32ebbedd9c620a",
+                "name": "Named : recursive clients",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.status[\"recursive clients\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "712caa97a6504d52af82c9d00f335dc5",
+                "name": "Named : soa queries in progress",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.status[\"soa queries in progress\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "7bcb673b128f4f8aa422f5e6dc73db8c",
+                "name": "Named: Status Named na porta 53",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "net.tcp.port[,{$PORTA_NAMED}]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "f2007a2ba8a04beeb9ea81ddca0e36cf",
+                "name": "Named : tcp clients",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.status[\"tcp clients\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "8826ccd6bf2f4393be0eeeb47cfaebcd",
+                "name": "Named: Uso de CPU do processo Named",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "proc.cpu.used[{$NAMED}]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "96048eda2cf14d0c819992ea408128d8",
+                "name": "Named : worker threads",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.status[\"worker threads\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "bc91e7d18c124f239f6ad94158abb606",
+                "name": "Named : xfers deferred",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.status[\"xfers deferred\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "dae73b82c8754c5c9cbcc6096add0845",
+                "name": "Named : xfers running",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "bind.status[\"xfers running\"]"
+                        }
+                    }
+                ]
+            },
+            {
+                "uuid": "da09bc8feed548e1a8f68bb3969b0add",
+                "name": "N\u00famero de Processos do Named",
+                "show_work_period": "NO",
+                "show_triggers": "NO",
+                "graph_items": [
+                    {
+                        "color": "009900",
+                        "item": {
+                            "host": "Template DNS - Bind",
+                            "key": "proc.num[{$NAMED}]"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
